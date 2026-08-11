@@ -13,6 +13,7 @@ Retogame is a small landing-style shop for selling retro games and game consoles
 - Form management: React Hook Form
 - State management: Zustand (if needed)
 - Server state management & data fetching: Tanstack Query
+- Tanstack Query codegen from OpenAPI: Orval
 - Build tool: Vite
 - Backend mockup: MSW
 - UI Documentation: Storybook
