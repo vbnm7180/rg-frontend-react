@@ -18,16 +18,50 @@ export default defineConfig([
       reactRefresh.configs.vite,
     ],
     rules: {
-      // Disable the base rule as it can report incorrect errors
-      'default-param-last': 'off',
+      // functions
+      'default-param-last': 'off', // Disable the base rule as it can report incorrect errors
       '@typescript-eslint/default-param-last': 'error',
-      //todo: delete if needed
       '@typescript-eslint/explicit-function-return-type': 'error',
-      //todo: delete if needed
       '@typescript-eslint/explicit-module-boundary-types': 'error',
-      // Disable the base rule as it can report incorrect errors
-      'max-params': 'off',
+      'max-params': 'off', // Disable the base rule as it can report incorrect errors
       '@typescript-eslint/max-params': ['error', { max: 3 }],
+      '@typescript-eslint/no-confusing-void-expression': [
+        'error',
+        {
+          ignoreArrowShorthand: true,
+        },
+      ],
+
+      // classes
+      '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
+      'no-unused-private-class-members': 'off', // Disable the base rule as it can report incorrect errors
+      '@typescript-eslint/no-unused-private-class-members': 'error',
+      '@typescript-eslint/prefer-readonly': 'error',
+
+      //enums
+      '@typescript-eslint/no-unnecessary-qualifier': 'error',
+      '@typescript-eslint/prefer-enum-initializers': 'error',
+
+      // naming
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'enum',
+          format: ['PascalCase'],
+        },
+        {
+          selector: 'variable',
+          modifiers: ['const'],
+          format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        },
+        {
+          selector: 'variable',
+          modifiers: ['const', 'global'],
+          format: ['UPPER_CASE'],
+        },
+      ],
+
+      // ordering
       '@typescript-eslint/member-ordering': [
         'error',
         {
@@ -37,8 +71,9 @@ export default defineConfig([
           },
         },
       ],
-      // Disable the base rule as it can report incorrect errors
-      'no-magic-numbers': 'off',
+
+      // others
+      'no-magic-numbers': 'off', // Disable the base rule as it can report incorrect errors
       '@typescript-eslint/no-magic-numbers': [
         'error',
         {
@@ -52,45 +87,13 @@ export default defineConfig([
           ignoreTypeIndexes: true,
         },
       ],
-      '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'error',
-      '@typescript-eslint/no-unnecessary-qualifier': 'error',
-      // Disable the base rule as it can report incorrect errors
-      'no-unused-private-class-members': 'off',
-      '@typescript-eslint/no-unused-private-class-members': 'error',
-      // Disable the base rule as it can report incorrect errors
-      'no-use-before-define': 'off',
+      'no-use-before-define': 'off', // Disable the base rule as it can report incorrect errors
       '@typescript-eslint/no-use-before-define': 'error',
       '@typescript-eslint/no-useless-empty-export': 'error',
-      '@typescript-eslint/prefer-enum-initializers': 'error',
-      '@typescript-eslint/prefer-readonly': 'error',
       '@typescript-eslint/strict-boolean-expressions': 'error',
-      '@typescript-eslint/naming-convention': [
-        'error',
-        {
-          selector: 'enum',
-          format: ['PascalCase'],
-        },
-        // 1. Базовое правило: для всех переменных разрешены camelCase и UPPER_CASE
-        {
-          selector: 'variable',
-          modifiers: ['const'],
-          format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-        },
-        // 2. Основное правило: требовать UPPER_CASE для const на верхнем уровне
-        {
-          selector: 'variable',
-          modifiers: ['const', 'global'],
-          format: ['UPPER_CASE'],
-        },
-      ],
-      '@typescript-eslint/no-confusing-void-expression': [
-        'error',
-        {
-          ignoreArrowShorthand: true,
-        },
-      ],
     },
     languageOptions: {
+      ecmaVersion: 'latest',
       globals: globals.browser,
       parserOptions: {
         projectService: true,
