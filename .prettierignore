@@ -16,6 +16,9 @@ skills-lock.json
 .agents
 coverage
 *.tsbuildinfo
+.husky
+.gitignore
+.prettierignore
 
 # Editor directories and files
 .vscode/*
