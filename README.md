@@ -2,7 +2,7 @@
 
 ## About
 
-Retogame is a small landing-style shop for selling retro games and game consoles.
+Retogame is a small shop for selling retro games and game consoles.
 
 ## Technologies stack
 
@@ -20,3 +20,6 @@ Retogame is a small landing-style shop for selling retro games and game consoles
 - Architecture: Feature Sliced Design
 - Unit testing: Jest
 - e2e testing: Playwright
+- Linting: typescript-eslint
+- Formatting: Prettier
+- Pre-commit hook: Husky & lint-staged
