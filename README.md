@@ -17,7 +17,7 @@ Retogame is a small shop for selling retro games and game consoles.
 - Build tool: Vite
 - Backend mockup: MSW
 - UI Documentation: Storybook
-- Architecture: Feature Sliced Design
+- Architecture: SPA & Feature Sliced Design
 - Unit testing: Jest
 - e2e testing: Playwright
 - Linting: typescript-eslint
