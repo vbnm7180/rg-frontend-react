@@ -9,7 +9,7 @@ Retogame is a small shop for selling retro games and game consoles.
 - JS Library for UI building: React 19
 - Programming language: Typescript 5.9
 - Router: React Router
-- UI Components Library: PrimeNG React
+- UI Components Library: Material UI
 - Form management: React Hook Form
 - State management: Zustand (if needed)
 - Server state management & data fetching: Tanstack Query
