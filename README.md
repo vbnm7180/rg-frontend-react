@@ -23,3 +23,7 @@ Retogame is a small shop for selling retro games and game consoles.
 - Linting: typescript-eslint
 - Formatting: Prettier
 - Pre-commit hook: Husky & lint-staged
+
+# Todo:
+
+Minimal FSD architecture: only Shared, Pages and App (https://feature-sliced.design/ru/docs/reference/layers)
