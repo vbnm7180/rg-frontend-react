@@ -28,3 +28,4 @@ Retogame is a small shop for selling retro games and game consoles.
 
 Minimal FSD architecture: only Shared, Pages and App (https://feature-sliced.design/ru/docs/reference/layers)
 Tailwind integration https://mui.com/material-ui/integrations/tailwindcss/tailwindcss-v4/#vite-js-or-any-other-spa
+Orval: https://orval.dev/docs/installation/
